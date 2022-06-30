@@ -41,6 +41,7 @@ function conection(status) {
       return "Offline";
     default: 
 }
+}
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
@@ -88,6 +89,7 @@ function colors(color)
       
 
 }
+ }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
@@ -111,6 +113,7 @@ function estaEnRango(numero) {
   else{
     return false;
 
+}
 }
 
 function esEntero(numero) {
@@ -138,7 +141,7 @@ function fizzBuzz(numero) {
   else if (num % 15 == 0){
     return "fizzbuzz";
   }
-
+}
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
   //Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
@@ -237,6 +240,4 @@ module.exports = {
   tablaDelSeis,
   tieneTresDigitos,
   doWhile
-  };
-
-  
+};
