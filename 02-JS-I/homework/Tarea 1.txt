@@ -1,0 +1,7 @@
+Variable : Una Variable es una forma de almacenar algo por el estilo por ej: una variable seria una caja y adentro de esta almacenas muñecos de accion.
+Strings: Las Strings son textos agregadas en una variable, por ejemplo: La variable seria un papel y el texto seria lo que escribes en el.
+Funciones: las funciones es una forma de guardar cierta cantidad de variables, por ej: en una habitacion (funcion) guardamos muchas cajas (variable), estas suelen tener argumentos que son variables guardadas entre parentesis, por ej: en una casa con cajas guardas en especifico un juguete.
+luego esta el return que es una forma de devolver la funcion, o sea guardar los cambios hechos en esta.
+Declaraciones:
+    if: es una forma de hacer realizar una accion si se cumple cierta condicion. por ejemplo: si mañana llueve entonces falto a la escuela.
+Valores booleanos: esta tiene como funcion dar un si o un no (true o false)(0 o 1) por ejemplo: esta lloviendo = true (aqui confirmamos que esta lloviendo).
