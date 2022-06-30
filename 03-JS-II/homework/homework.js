@@ -1,14 +1,16 @@
 // No cambies los nombres de las funciones.
 
+const { arrayReplaceAt } = require("markdown-it/lib/common/utils");
+
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x < y){
+  if (x > y){
     return x;
   }
-  else if (y < x){
+  else if (y > x){
     return y;
   }
   else {
@@ -24,7 +26,7 @@ function mayoriaDeEdad(edad) {
     return "Allowed";
   }
   else{
-    return "Not Allowed";
+    return "Not allowed";
   }
 }
   
@@ -37,9 +39,13 @@ function conection(status) {
   switch (status) {
     case "1":
       return "Online";
+      break;
     case "2":
-      return "Offline";
+      return "Away";
+      break;
     default: 
+      return "Offline";
+      break;
 }
 }
 
@@ -71,16 +77,16 @@ function colors(color)
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   switch (color) {
-    case blue:
+    case (color === blue):
       return "This is blue";
       break;
-    case red:
+    case (color === red):
       return "This is red";
       break;
-    case green:
+    case (color === green):
       return "This is green";
       break;
-      case orange:
+      case (color === orange):
         return "This is orange";
         break;
       default:
@@ -107,7 +113,7 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero > 20 || numero < 50){
+  if (numero > 20 && numero < 50){
     return true;
   }
   else{
@@ -132,15 +138,17 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if (num % 3 == 0 ){
+  if (numero % 3 === 0 ){
     return "fizz";
   }
-  else if (num % 5 == 0 ){
+  if (numero % 5 === 0 ){
     return "buzz";
 }
-  else if (num % 15 == 0){
+  if (numero % 15 === 0){
     return "fizzbuzz";
   }
+    return numero;
+  
 }
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
@@ -149,21 +157,22 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
-   if (num1 < 0 && num1 < num2 && num1 < num3){
-    return "Número 1 es mayor y positivo";
-   }
-   if(num1 < 0 || num2 <0 || num3 < 0){
+   if (num1 < 0 || num1 < 0 || num1 < 0){
     return "Hay negativos";
    }
-   if (num3 > num1 && num3 > num2){
-    return num3 + 1;
-   }
-   if(num1 === 0 || num2 === 0 || num3 === 0) {
+   else if(num1 === 0 || num2 === 0 || num3 === 0) {
     return "Error";
   }
-  else{
+  else if(num1 > 0 && num1 > num2 && num1 > num3) {
+    return "Número 1 es mayor y positivo";
+  }
+  else if(num3 > num1 && num3 > num2) {
+    return num3 + 1;
+  }
+  else {
     return false;
   }
+   
 }
 
 function esPrimo(numero) {
@@ -203,21 +212,32 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   for (var i = 0; i < 11; i++){
-      return Array.isArray(6 * i);
+      return tabla.push(6 * i);
   }
-  return Array.isArray;
+  return tabla;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if (numero.length == 3 ){
+    return true;
+  }
+  else{
+    return false;
+  }
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  do {
+    numero = numero + 5
+    var i=0
+    repetir= i + 1
+  } while (repetir == 8);
+  return numero;
 }
 
 
