@@ -91,7 +91,7 @@ function colors(color)
         break;
       default:
         return "Color not found";
-        break;
+        
       
 
 }
