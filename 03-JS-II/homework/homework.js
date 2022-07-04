@@ -45,7 +45,7 @@ function conection(status) {
       break;
     default: 
       return "Offline";
-      break;
+    
 }
 }
 
@@ -91,7 +91,7 @@ function colors(color)
         break;
       default:
         return "Color not found";
-        
+
       
 
 }
@@ -235,6 +235,7 @@ function doWhile(numero) {
     n = n + 5
   } while (i < 8);
   return n;
+  
 }
 
 
