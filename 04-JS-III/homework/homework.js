@@ -59,7 +59,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return palabras.join[" "];
+  return palabras.join(' ');
 }
 
 
@@ -71,10 +71,8 @@ function arrayContiene(array, elemento) {
     if (array[i] == elemento){
       return true
     }
-    else {
-      return false;
-    }
   }
+      return false;
 }
 
 
@@ -94,7 +92,8 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  return array(resultadosTest) / resultadosTest.length;
+  //utilice esta funcion ya que llama numeros espero que no sea un problema.
+  return agregarNumeros(resultadosTest) / resultadosTest.length;
 }
 
 
@@ -102,10 +101,10 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  var may = numeros [0];
-  for(var i = 0 ; i < array.length; i++){
+  var may = numeros[0];
+  for(var i = 0 ; i < numeros.length; i++){
     if(numeros [i] > may){
-      may = may + numeros[i];
+      may = numeros[i];
     }
   }
   return may;
@@ -117,9 +116,9 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
     if (arguments.length < 1) return 0 ;
-    var mult= 0;
+    var mult = 1;
   for (var i = 0 ; i < arguments.length; i++){
-    mult = total * arguments[i];
+    mult = mult * arguments[i];
   }
   return mult;
 }
@@ -153,8 +152,8 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  var numero =n.toString;
-  if(n.charAt(0) == "9"){
+  var numero = n.toString();
+  if(numero.charAt(0) == '9'){
     return true;
   }
   else{
@@ -188,6 +187,7 @@ function mesesDelAño(array) {
       if (array[i] == "Enero" || array[i] == "Marzo" || array [i] == "Noviembre"){
         a.push(array[i]);
       }
+    }
       if (a.length < 3){
         return "No se encontraron los meses pedidos";
       }
@@ -195,7 +195,7 @@ function mesesDelAño(array) {
         return a;
       }
 }
-}
+
 
 
 function mayorACien(array) {
@@ -207,8 +207,9 @@ function mayorACien(array) {
     if (array[i] > 100){
       array2.push(array[i]);
     }
+  }
     return array2;
-}
+
 }
 
 
@@ -226,11 +227,11 @@ function breakStatement(numero) {
     sum = sum + 2;
     if (sum == i) break;
     else{
-      array.push(suma)
+      array.push(sum)
     }
 }
   if (i < 10){
-    return "Se interrumpio la ejecución";
+    return "Se interrumpió la ejecución";
   }
   else {
     return array;
