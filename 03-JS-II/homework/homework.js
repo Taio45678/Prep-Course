@@ -1,6 +1,5 @@
 // No cambies los nombres de las funciones.
 
-const { arrayReplaceAt } = require("markdown-it/lib/common/utils");
 
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
@@ -10,12 +9,7 @@ function obtenerMayor(x, y) {
   if (x > y){
     return x;
   }
-  else if (y > x){
-    return y;
-  }
-  else {
-    return x;
-  }
+  return y;
 }
 
 function mayoriaDeEdad(edad) {
@@ -37,10 +31,10 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   switch (status) {
-    case (status == "1"):
+    case 1:
       return "Online";
       break;
-    case (status =="2"):
+    case 2:
       return "Away";
       break;
     default: 
@@ -77,25 +71,22 @@ function colors(color)
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   switch (color) {
-    case (color === "blue"):
+    case "blue":
       return "This is blue";
       break;
-    case (color === "red"):
+    case "red":
       return "This is red";
       break;
-    case (color === "green"):
+    case "green":
       return "This is green";
       break;
-      case (color === "orange"):
+      case "orange":
         return "This is orange";
         break;
       default:
         return "Color not found";
-
-      
-
-}
  }
+}
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
@@ -138,12 +129,10 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if (numero % 3 === 0 ) return "fizz";
-  
-  if (numero % 5 === 0 ) return "buzz";
-
-  if (numero % 15 === 0) return "fizzbuzz";
-    return numero;
+  if(numero % 15 === 0) return 'fizzbuzz';
+  if(numero % 3 === 0) return 'fizz';
+  if(numero % 5 === 0) return 'buzz';
+  return numero;
   
 }
 function operadoresLogicos(num1, num2, num3) {
@@ -187,9 +176,8 @@ function esPrimo(numero) {
     if (numero % i == 0){
       return false;
     }
-    
-  }
-  return true;
+}
+return true;
 }
 
 function esVerdadero(valor){
@@ -203,14 +191,16 @@ function esVerdadero(valor){
 
 }
 
+
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
-  for (let i = 0; i < 11; i++){
-      return arrayMultiplicacion.push(6 * i);
+  //Escribe tu código aquí:
+  let multi = []
+  for (let i = 0; i < 11; i++) {
+        multi.push(6 * i)
   }
-  return arrayMultiplicacion;
+  return multi
 }
 
 function tieneTresDigitos(numero){
@@ -228,14 +218,14 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var n = numero;
+  var s = numero;
   var i = 0;
   do {
-    i = i++
-    n = n + 5
-  } while (i < 8);
-  return n;
-  
+    i = i + 1;
+    s = s + 5;
+  }
+  while(i < 8);
+  return s;
 }
 
 
