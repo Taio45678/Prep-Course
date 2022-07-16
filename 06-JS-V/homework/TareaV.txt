@@ -1,0 +1,2 @@
+* `prototype` permite dar acceso a cada objeto de esa clase a los metodos
+* _Constructors_ (de Clases)    permite crear un objeto a partir de una clase.

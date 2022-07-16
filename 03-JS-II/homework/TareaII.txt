@@ -1,0 +1,4 @@
+Un bucle for es una forma de realizar una cierta cantidad de repeticiones hasta que se cumpla la condicion.
+&& significa que si ambas condiciones se cumple se realiza la funcion
+|| significa que si una de las dos funciones se cumple se realiza la funcion
+! significa que si se cumple una funcion se hace la inversa a esta

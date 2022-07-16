@@ -1,0 +1,6 @@
+* Objetos estos pueden contener toda la informacion de todo tipo en una sola cosa.
+* Propiedades es un identificador de un tipo de dato.
+* Métodos los metodos son las funciones guardadas en un objeto
+* Bucle `for…in`    permite leer cada una de las claves de un objeto 
+* Notación de puntos vs notación de corchetes   con la notacion de puntos se puede llamar a un objeto y con corchetes se puede llamar a un
+elemnto de una matriz
