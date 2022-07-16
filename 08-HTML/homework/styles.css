@@ -1,10 +1,26 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    background-image: url(https://fondosmil.com/fondo/27475.jpg);
+}
 h1 {color:darkorchid }
+.divClass{
+    margin-left: auto;
+    margin-right: auto;
+}
 #thirdDiv {
     width: 500px;
     height: 600px;
     background-color: aquamarine;
     padding: 50px;
     border: 20px solid blueviolet;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 #spanId {
